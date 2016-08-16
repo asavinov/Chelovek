@@ -1,0 +1,617 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Romanian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ROM)
+#ifdef _WIN32
+LANGUAGE LANG_ROMANIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Chelovek.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Romanian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DATASOURCE DIALOG DISCARDABLE  0, 0, 285, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Data Source"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,228,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,228,67,50,14
+    LISTBOX         IDC_DS_TABLES,7,50,103,69,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Tables:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOPREFIX | WS_GROUP,7,38,102,8
+    LISTBOX         IDC_DS_FIELDS,118,50,103,69,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Fields:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOPREFIX | WS_GROUP,118,38,102,8
+    CONTROL         "Database:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOPREFIX | WS_GROUP,7,6,52,8
+    EDITTEXT        IDC_DS_DATABASE,7,18,215,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Browse...",IDC_DS_DBSELECT,228,17,50,14
+END
+
+IDD_OPT_ANALYSIS DIALOG DISCARDABLE  0, 0, 186, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Analysis Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LTEXT           "Maximal number of values:",IDC_STATIC,7,13,116,8
+    EDITTEXT        IDC_MAXVALEDIT,7,24,54,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_MAXVALSPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,65,24,11,
+                    14
+END
+
+IDD_PROCESS_ANALYSIS DIALOG DISCARDABLE  0, 0, 220, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Analysis"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,163,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,24,50,14
+    PUSHBUTTON      "&Start",IDC_STARTBTN,163,49,50,14
+    PUSHBUTTON      "&End",IDC_ENDBTN,163,67,50,14
+    PUSHBUTTON      "Options...",IDC_OPTIONSBTN,163,85,50,14
+    RTEXT           "Record Number:",IDC_STATIC,7,11,75,10
+    RTEXT           "Values Number:",IDC_STATIC,7,27,76,11
+    CONTROL         "Static",IDC_RECNOEDIT,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,87,10,62,11
+    LTEXT           "Static",IDC_VALNUMEDIT,87,27,62,11,SS_SUNKEN
+END
+
+IDD_OPT_INDUCTION DIALOG DISCARDABLE  0, 0, 220, 118
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rule Induction Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,163,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,24,50,14
+    RTEXT           "Max Rules:",IDC_STATIC,7,67,74,8
+    EDITTEXT        IDC_MAXLINES,86,64,54,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_MAXLINESSPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,141,64,11,14
+    RTEXT           "Max New Rules:",IDC_STATIC,7,89,74,8
+    EDITTEXT        IDC_MAXNEWLINES,86,86,54,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_MAXNEWLINESSPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,140,87,11,14
+    RTEXT           "Max Rank:",IDC_STATIC,7,26,74,8
+    EDITTEXT        IDC_MAXRANK,86,23,54,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin4",IDC_MAXRANKSPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,141,23,11,14
+    RTEXT           "Goal:",IDC_STATIC,7,47,74,8
+    COMBOBOX        IDC_GOALVARCOMBO,100,44,113,67,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_GOALVARCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,86,47,11,8
+END
+
+IDD_PROCESS_INDUCTION DIALOG DISCARDABLE  0, 0, 220, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rule Induction"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,163,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,24,50,14
+    PUSHBUTTON      "&Start",IDC_STARTBTN,163,49,50,14
+    PUSHBUTTON      "&End",IDC_ENDBTN,163,67,50,14
+    PUSHBUTTON      "Options...",IDC_OPTIONSBTN,163,85,50,14
+    RTEXT           "Record Number:",IDC_STATIC,7,11,75,10
+    RTEXT           "Rules Number:",IDC_STATIC,7,27,76,11
+    CONTROL         "Static",IDC_RECNOEDIT,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,87,10,62,11
+    LTEXT           "Static",IDC_RULENUMEDIT,87,27,62,11,SS_SUNKEN
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 251, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Chelovek"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    CONTROL         "Chelovek 2.0",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOPREFIX | WS_GROUP,40,10,141,8
+    LTEXT           "Copyright (C) 1998",IDC_STATIC,40,40,204,8
+    DEFPUSHBUTTON   "OK",IDOK,212,7,32,14,WS_GROUP
+    LTEXT           "Alexandr A. Savinov",IDC_STATIC,40,50,204,8
+    LTEXT           "Institute of Mathematics, Acad. Sci. Moldavia",
+                    IDC_STATIC,40,60,204,8
+    LTEXT           "str. Academiei 5, MD-2028 Kishinev, Moldavia",
+                    IDC_STATIC,40,70,204,8
+    LTEXT           "Tel.: 3732-73-81-30, Fax: 3732-73-80-27",IDC_STATIC,40,
+                    80,204,8
+    LTEXT           "E-mail: savinov@math.md, savinov@usa.net",IDC_STATIC,40,
+                    90,204,8
+    LTEXT           "http://www.geocities.com/ResearchTriangle/7220/",
+                    IDC_STATIC,40,100,204,8
+    LTEXT           "Fuzzy Rule Induction System",IDC_STATIC,40,20,141,8,
+                    SS_NOPREFIX
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DATASOURCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_OPT_ANALYSIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_PROCESS_ANALYSIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_OPT_INDUCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_PROCESS_INDUCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        VERTGUIDE, 40
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Chelovek.ico"
+IDR_CHELOVEKTYPE        ICON    DISCARDABLE     "res\\ChelovekDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_TREE_KB             BITMAP  DISCARDABLE     "res\\KB.bmp"
+IDB_TREE_KB_SEL         BITMAP  DISCARDABLE     "res\\KB_SEL.bmp"
+IDB_TREE_SEM            BITMAP  DISCARDABLE     "res\\SEM.bmp"
+IDB_TREE_SEM_SEL        BITMAP  DISCARDABLE     "res\\SEM_SEL.bmp"
+IDB_TREE_SYN            BITMAP  DISCARDABLE     "res\\SYN.bmp"
+IDB_TREE_SYN_SEL        BITMAP  DISCARDABLE     "res\\SYN_SEL.bmp"
+IDB_TREE_VAL            BITMAP  DISCARDABLE     "res\\VAL.bmp"
+IDB_TREE_VAL_SEL        BITMAP  DISCARDABLE     "res\\VAL_SEL.bmp"
+IDB_TREE_VAR            BITMAP  DISCARDABLE     "res\\VAR.bmp"
+IDB_TREE_VAR_SEL        BITMAP  DISCARDABLE     "res\\VAR_SEL.bmp"
+IDB_TREE_DS             BITMAP  DISCARDABLE     "res\\DS.bmp"
+IDB_TREE_DS_SEL         BITMAP  DISCARDABLE     "res\\DS_SEL.bmp"
+IDB_TREE_RULE           BITMAP  DISCARDABLE     "res\\RULE.bmp"
+IDB_TREE_RULE_SEL       BITMAP  DISCARDABLE     "res\\RULE_SEL.bmp"
+IDB_TREE_IF             BITMAP  DISCARDABLE     "res\\IF.bmp"
+IDB_TREE_IF_SEL         BITMAP  DISCARDABLE     "res\\IF_SEL.bmp"
+IDB_TREE_THEN           BITMAP  DISCARDABLE     "res\\THEN.bmp"
+IDB_TREE_THEN_SEL       BITMAP  DISCARDABLE     "res\\THEN_SEL.bmp"
+IDB_TREE_COMP0          BITMAP  DISCARDABLE     "res\\COMP0.bmp"
+IDB_TREE_COMP1          BITMAP  DISCARDABLE     "res\\COMP1.bmp"
+IDB_TREE_COMP2          BITMAP  DISCARDABLE     "res\\COMP2.bmp"
+IDB_TREE_COMP3          BITMAP  DISCARDABLE     "res\\COMP3.bmp"
+IDB_TREE_COMP4          BITMAP  DISCARDABLE     "res\\COMP4.bmp"
+IDB_TREE_COMP5          BITMAP  DISCARDABLE     "res\\COMP5.bmp"
+IDB_TREE_COMP6          BITMAP  DISCARDABLE     "res\\COMP6.bmp"
+IDB_TREE_COMP7          BITMAP  DISCARDABLE     "res\\COMP7.bmp"
+IDB_TREE_COMP8          BITMAP  DISCARDABLE     "res\\COMP8.bmp"
+IDB_TREE_COMP9          BITMAP  DISCARDABLE     "res\\COMP9.bmp"
+IDB_TREE_COMP10         BITMAP  DISCARDABLE     "res\\COMP10.bmp"
+IDB_TREE_COMP11         BITMAP  DISCARDABLE     "res\\COMP11.bmp"
+IDB_TREE_COMP12         BITMAP  DISCARDABLE     "res\\COMP12.bmp"
+IDB_TREE_COMP13         BITMAP  DISCARDABLE     "res\\COMP13.bmp"
+IDB_TREE_COMP14         BITMAP  DISCARDABLE     "res\\COMP14.bmp"
+IDB_TREE_COMP15         BITMAP  DISCARDABLE     "res\\COMP15.bmp"
+IDB_TREE_COMP16         BITMAP  DISCARDABLE     "res\\COMP16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+    POPUP "&Insert"
+    BEGIN
+        MENUITEM "&Data Source...",             ID_INSERT_DATASOURCE
+    END
+    POPUP "&Process"
+    BEGIN
+        MENUITEM "&Analysis...",                ID_PROCESS_ANALYSIS
+        MENUITEM "&Rule Induction...",          ID_PROCESS_INDUCTION
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About Chelovek...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Alexandr A. Savinov\0"
+            VALUE "FileDescription", "Chelovek 2.0, Fuzzy Rule Induction System\0"
+            VALUE "FileVersion", "2.0\0"
+            VALUE "InternalName", "Chelovek\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "OriginalFilename", "Chelovek.EXE\0"
+            VALUE "ProductName", "Chelovek 2.0, Fuzzy Rule Induction System\0"
+            VALUE "ProductVersion", "2.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Chelovek\n\nChelovek\n\n\nChelovek.Document\nChelovek Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Chelovek"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INSERT_DATA          "Insert external data source to be used when processing data"
+    ID_INSERT_DATASOURCE    "Insert new external data source to be used when processing data"
+    ID_PROCESS_ANALYSIS     "Start preliminary analysis of data to find syntactic structure and simple dependencies"
+    ID_PROCESS_INDUCTION    "Start rule induction process to find hidden dependencies"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Chelovek.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxdb.rc"          // Database resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

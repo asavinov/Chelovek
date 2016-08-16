@@ -1,0 +1,6 @@
+
+Define Alloc, Realloc and Free functions within LK and replace all 
+occurrances on them in all modules
+
+
+Define LkBool

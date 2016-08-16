@@ -1,0 +1,23 @@
+// MAKEHELP.BAT generated Help Map file.  Used by CHELOVEK.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_INSERT_DATA                         0x18003
+HID_INSERT_DATASOURCE                   0x18005
+HID_PROCESS_ANALYSIS                    0x18006
+HID_PROCESS_INDUCTION                   0x18007
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_CHELOVEKTYPE                       0x20081
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_DATASOURCE                         0x2008D
+HIDD_OPT_ANALYSIS                       0x20090
+HIDD_PROCESS_ANALYSIS                   0x20091
+HIDD_OPT_INDUCTION                      0x20093
+HIDD_PROCESS_INDUCTION                  0x20094
+ 
+// Frame Controls (IDW_*) 
